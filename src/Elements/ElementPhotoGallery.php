@@ -71,6 +71,8 @@ class ElementPhotoGallery extends BaseElement
             $fields->addFieldToTab('Root.Main', $imagesField);
         }
 
+        $this->extend('updateCMSFields', $fields);
+
         return $fields;
     }
 
